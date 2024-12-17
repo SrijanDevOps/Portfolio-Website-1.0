@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio_Website</title>
+    
+  </head>
+  <link rel="stylesheet" href="./output.css">
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins';
+      box-sizing: border-box;
+    }
+    body {
+      background: black;
+      line-height: 1.5;
+      font-size: clamp(1.125rem,2vw,1.25rem);
+      
+      color: white;
+      font-family: sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(16, 15, 15);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color:white;
+      font-size: 1.3rem;
+    }
+
+    nav ul li a:hover {
+      color: blueviolet;
+      font-size: 1.34rem;
+    }
+
+    
+    
+      
+    
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0;
+      align-items: center;
+    }
+
+    .leftsection {
+      font-size: 3rem;
+      margin: 70px 0;
+    }
+    .rightsection img {
+      height: 350px;
+      width: 350px;
+      margin: 50px 0;
+      border-radius: 50%;
+    }
+
+    .fisrtsection > div {
+      width: 30%;
+    }
+    .purple {
+      color: blueviolet;
+    }
+    #element {
+      color: rgb(148, 60, 231);
+    }
+    
+
+
+    
+    main hr{
+      border: 0;
+      background: rgb(139, 129, 129);
+      height: 1.2px;
+      margin: 40px 84px;
+
+    }
+    .leftsection .Buttons{
+      padding: 50px 0;
+    }
+    .btn{
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 20px;
+      border: 2px solid white;
+      background: rgb(114, 9, 212);
+      color: white;
+      text-decoration: none;
+
+    }
+    .leftsection .Buttons a:hover{
+      font-size: 1.4rem;
+      color: grey;
+      
+    }
+    .About{
+      margin: 80px auto; 
+      padding: 20px;
+      max-width: 1400px; 
+      line-height: 2.4; 
+      
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+
+    }
+    .me{
+      margin: 50px 0;
+      width: 30;
+      
+      font-size: 2.8rem;
+      text-align: center;
+      text-underline-offset: 9px;
+      text-decoration:underline  blueviolet;
+    }
+    .me-img img{
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      margin: 45px;
+      float: left;
+    }
+    .Skills{
+      font-size: 2.8rem;
+      text-align: center;
+      text-decoration: underline blueviolet;
+      text-underline-offset: 9px;
+    }
+    .me-skills img{
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      margin: 20px;
+      float: right;
+    }
+    .skills{
+      display: flex;
+      margin: 40px auto; 
+      padding: 20px;
+      max-width: 1500px; 
+      line-height: 2.8; 
+      
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      width: 30;
+
+    }
+    .Education{
+      display: flex;
+      margin: 40px auto; 
+      padding: 20px;
+      max-width: 1500px; 
+      line-height: 2.8; 
+      
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      width: 30;
+
+    }
+    .education{
+      font-size: 2.8rem;
+      text-align: center;
+      text-decoration: underline blueviolet;
+      text-underline-offset: 9px;
+
+    }
+    .me-education img{
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      margin: 90px;
+      float: left;
+    }
+    h3{
+      font-style: italic;
+      font-size: 1.8rem;
+      text-decoration: underline rgb(63, 62, 62);
+      text-underline-offset: 9px;
+      
+    }
+    .footer-first{
+      text-align: center;
+    }
+    .footerrights{
+      margin: 70px 0;
+      
+      color: grey;
+      padding: 12px 0;
+    }
+    
+    .Contact{
+    font-size: 2.8rem;
+      text-align: center;
+      text-decoration: underline blueviolet;
+      text-underline-offset: 9px;
+    }
+    .hero{
+      width: 100%;
+      height: 100vh;
+      background:black url(./background\ image.png);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    form{
+      width: 90%;
+      max-width: 600px;
+    }
+    .input-group{
+      margin-top: 30px;
+      position: relative;
+    }
+    input,textarea{
+      width: 100%;
+      padding: 10px;
+      outline: 0;
+      
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      font-size: 15px;
+    }
+    label{
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 10px;
+      color: #fff;
+      cursor: text;
+      transition: 0.2s;
+    }
+    button{
+      padding: 10px 0;
+      color: #fff;
+      outline: none;
+      background: transparent;
+      border: 1px solid #fff;
+      width: 100%;
+      cursor: pointer;
+    }
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label
+    {
+      top: -35px;
+      font-size: 14px;
+
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4%;
+    }
+    .row .input-group{
+      flex-basis: 48%;
+    }
+    .footerrights{
+      text-align: center;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    p{
+      animation:fade linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 50%;
+
+    }
+    @keyframes fade {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+      
+    }
+    h1,h3{
+      background:linear-gradient(90deg,white,transparent);
+      background-size: 200%;
+      animation: reveal both linear;
+      animation-timeline:view();
+      background-repeat: no-repeat;
+      animation-range: entry 50% cover 50%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+    }
+    @keyframes reveal {
+      from{
+        opacity: 0;
+    
+      }
+      to{
+        opacity: 1;
+
+      }
+      
+    }
+    /* Social Icons Styling */
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.social-icons ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.social-icons ul li a:hover {
+  color: #007bff;
+  font-size: 2.2rem;
+}
+
+/* Navigation Links Styling */
+.navigation-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.navigation-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.navigation-links ul li a:hover {
+  color: blueviolet;
+}
+
+    
+  </style>
+  <body>
+    <header>
+      <nav>
+        <!-- Social Icons Section -->
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://www.instagram.com/srijank_27/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/srijan.kumar.969?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2FSrijan_Kumar_"><i class="fa-brands fa-x"></i></a></li>
+            <li><a href="https://github.com/SrijanDevOps"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </div>
+    
+        <!-- Navigation Links Section -->
+        <div class="navigation-links right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Contact Me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div class="hi" >Hi I'm <span class="purple">Srijan </span></div>
+          <div class="red">and Iam a Passionate</div>
+          
+          <span id="element"></span>
+          <div class="Buttons">
+           
+           <a target="_blank"  href="https://github.com/SrijanDevOps"button class="btn">Visit GitHub</button></a>
+
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="./p1.png" alt="" />
+        </div>
+        
+        
+        
+        
+      </section>
+      <hr>
+      <section id="About" class="About">
+        <div>
+          
+          <h1 class="me">About me</u></h1>
+          <div class="me-img">
+            <img  src="./aboutme.png" alt="">
+          </div>
+          <p>
+            Hi, I’m Srijan Kumar, a passionate and dedicated B.Tech student pursuing Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at PSIT.
+          </p>
+          <p>
+            I’m a budding frontend developer with a keen eye for design and user experience, and I’m proficient in C, C++, and Python. My journey in programming has been fueled by curiosity and a desire to create impactful solutions.
+          </p>
+          <p>
+            I completed my schooling at Mercy Memorial School, where my foundation for problem-solving and technical skills was laid. Beyond academics, I enjoy working on innovative projects and constantly seek opportunities to learn and grow in the tech space.
+          </p>
+          <p>
+            Feel free to explore my work and connect with me to collaborate on exciting projects!
+          </p>
+
+
+        </div>
+
+      </section>
+      <hr>
+      <section id="Skills" class="skills">
+        <div>
+          <h1 class="Skills">Skills</h1>
+          <div class="me-skills">
+            <img src="./skills.png" alt="">
+          </div>
+          <p>Web Development: Proficient in HTML, CSS, and JavaScript, capable of creating responsive and interactive web pages.</p>
+          <p>Programming Languages: Strong in C, C++, and Python, with an emphasis on problem-solving and algorithmic thinking.</p>
+          <p>Algorithms and Logic Design: Experienced in designing efficient solutions and logical structures in various programming contexts.
+          </p>
+        </div>
+
+      </section>
+      <hr>
+      <section id="Education" class="Education">
+        <div>
+          <h1 class="education">Education</h1>
+          <div class="me-education">
+            <img src="./education.png" alt="">
+          </div>
+          <h3>
+           •  Mercy Memorial School, Kanpur, UP
+          </h3>
+          <p>Completed my schooling with a strong focus on science. Developed a solid foundation in subjects like Mathematics, Physics, and Computer Science, which fueled my interest in technology and problem-solving.</p>
+          <h3>•  B.Tech in Computer Science and Engineering (CSE)</h3>
+          <p>Currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence (AI) and Machine Learning (ML). Gaining deep knowledge in cutting-edge technologies, algorithms, and data analysis, preparing for a career in AI-driven innovations.
+
+          </p>
+        </div>
+      </section>
+      <hr>
+      
+    </main>
+    <footer>
+      <div class="footer">
+        <div>
+          <h1 id="Contact Me" class="Contact">Contact Me</h1>
+        </div>
+        <div class="hero">
+          <form >
+            <div class="row">
+              <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+              </div>
+              <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number">Phone No</label>
+              </div>
+
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required>
+              <label for="email">Email Id</label>
+            </div>
+            <div class="input-group">
+              <textarea  id="message" rows="8" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <div>
+              <button type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+        
+        </div>
+      <div class="footerrights">  Copyright &#169;Srijansportfolio.com | All Righst Reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer !'],
+        typeSpeed: 50,
+      });
+    </script>
+    
+    
+  </body>
+</html>
