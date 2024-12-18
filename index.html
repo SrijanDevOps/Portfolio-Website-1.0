@@ -366,6 +366,73 @@
 .navigation-links ul li a:hover {
   color: blueviolet;
 }
+@media (max-width: 900px) and (min-width: 600px) {
+  body {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
+
+  nav {
+    height: 70px;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .firstsection {
+    flex-direction: column;
+    margin: 100px 0;
+  }
+
+  .leftsection, 
+  .rightsection {
+    width: 90%;
+    text-align: center;
+  }
+
+  .rightsection img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .About, .skills, .Education {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .me-img img,
+  .me-skills img,
+  .me-education img {
+    height: 250px;
+    width: 250px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h1, h3 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-icons ul li a {
+    font-size: 1.8rem;
+  }
+}
 
     
   </style>
